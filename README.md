@@ -1,7 +1,6 @@
 <h1 align="center">java-an10-onl </h1>
 
 
-
 <b>ФИО:</b> Демух Андрей Александрович
 <br><b>Наименование курса:</b> AN10-onl, модуль:Java<br/>
 <h3 align="center">Lesson01 </h2>
