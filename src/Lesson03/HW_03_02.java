@@ -6,7 +6,7 @@ public class HW_03_02 {
     public static void main(String[] args) {
 //      1. При помощи цикла for вывести на экран нечетные числа от 1 до 99.
         System.out.println("1.HomeWork Lesson 3, #1");
-        for (int i = 0; i < 101; i++) {
+        for (int i = 0; i < 100; i++) {
             if (i % 2 != 0) {
                 System.out.print(i + " ");
             }
@@ -30,8 +30,8 @@ public class HW_03_02 {
         int summa = 0;
         for (int i = 0; i <= N; i++) {
             summa += i;
-            System.out.print(summa + " ");
         }
+        System.out.print(summa);
 
 //      4.Напишите программу, которая будет выводить на экран
 //      такую последовательность 7, 14, 21, 28, 35, 42, 49, 56, 63,
@@ -46,13 +46,11 @@ public class HW_03_02 {
 
 //      5.Вывести 10 первых чисел последовательности 0, -5, -10, -15 .....
         System.out.println("\n5.HomeWork Lesson 3, #5");
-//        int b = 0;
-//        while (b < -50) ;
-//        System.out.print(b + " ");
-//        b = b - 5;
-        for (int i = 0; i > -50 ; i--) {
-            if(i % 5==0){
-                System.out.print(i + " ");
+        int a1 = 0;
+        for (int i = 1; i <= 10 ; i++) {
+            a1 = a1 - 5;
+            if (a1 % 5 == 0) {
+                System.out.println(i +". " + a1);
             }
         }
 //      6. Составьте программу, выводящую на экран
@@ -60,7 +58,11 @@ public class HW_03_02 {
         System.out.println("\n6.HomeWork Lesson 3, #6");
         for (int i = 10; i <= 20; i++) {
             int square = i*i;
-            System.out.print(square + " ");
+            if (i<20){
+                System.out.print(square + " ");
+            }else {
+                System.out.print(square);
+            }
         }
- }
+    }
 }

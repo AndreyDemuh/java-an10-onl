@@ -25,45 +25,30 @@ public class HW_03_01 {
 
         //    Реализация через switch-case. Явно задаем номер месяца
         System.out.println("1.HomeWork Lesson 3, #1.2");
-        int season = 5;
+        int season = 9;
+
         switch (season) {
-            case (1):
+            case 1:
+            case 2:
+            case 12:
                 System.out.println("Winter");
                 break;
-            case (2):
-                System.out.println("Winter");
-                break;
-            case (3):
+            case 3:
+            case 4:
+            case 5:
                 System.out.println("Spring");
                 break;
-            case (4):
-                System.out.println("Spring");
-                break;
-            case (5):
-                System.out.println("Spring");
-                break;
-            case (6):
+            case 6:
+            case 7:
+            case 8:
                 System.out.println("Summer");
                 break;
-            case (7):
-                System.out.println("Summer");
-                break;
-            case (8):
-                System.out.println("Summer");
-                break;
-            case (9):
+            case 9:
+            case 10:
+            case 11:
                 System.out.println("Autumn");
                 break;
-            case (10):
-                System.out.println("Autumn");
-                break;
-            case (11):
-                System.out.println("Autumn");
-                break;
-            case (12):
-                System.out.println("Winter");
-                break;
-            default:
+                default:
                 System.out.println("Wrong number");
         }
 
@@ -73,9 +58,9 @@ public class HW_03_01 {
         System.out.println("Write the number");
         int number = scn.nextInt();
         if (number % 2 == 0) {
-            System.out.println("My number " + number + " - Number is even");
+            System.out.println(number + " - Number is even");
         } else {
-            System.out.println("My number " + number + " - Number is not even");
+            System.out.println(number + " - Number is not even");
         }
 
 //      3.Для числа t вывести "Тепло", "Нормально", "Холодно",
@@ -84,40 +69,38 @@ public class HW_03_01 {
         System.out.println("Write the t: ");
         int t = scn.nextInt();
         if (t > 15) {
-            System.out.println("teplo");
-        } else if (t <= 15 && t > -5) {
-            System.out.println("norm");
-        } else if (t <= -5) {
-            System.out.println("xolodno");
+            System.out.println("Тепло");
+        } else if (t > -5) {
+            System.out.println("Нормально");
         } else {
-            System.out.println("uncorrect t");
+            System.out.println("Холодно");
         }
 
-//      4. ПО введеному ноиеру определить цвет радуги
+//      4. По введеному ноиеру определить цвет радуги
         System.out.println("4.HomeWork Lesson 3, #4");
         System.out.println("Write the № color: ");
         int color = scn.nextInt();
         switch (color) {
             case (1):
-                System.out.println("Krasniy");
+                System.out.println("Red");
                 break;
             case (2):
-                System.out.println("Oranjeviy");
+                System.out.println("Orange");
                 break;
             case (3):
-                System.out.println("Jeltiy");
+                System.out.println("Yellow");
                 break;
             case (4):
-                System.out.println("Zeleniy");
+                System.out.println("Green");
                 break;
             case (5):
-                System.out.println("Golyboy");
+                System.out.println("Blue");
                 break;
             case (6):
-                System.out.println("Siniy");
+                System.out.println("Indigo");
                 break;
             case (7):
-                System.out.println("Fioletoviy");
+                System.out.println("Violet");
                 break;
             default:
                 System.out.println("Wrong number");
