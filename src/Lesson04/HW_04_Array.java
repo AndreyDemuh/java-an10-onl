@@ -12,15 +12,17 @@ public class HW_04_Array {
         System.out.println("Урок №4, Задание №1");
         Scanner scn = new Scanner(System.in);
         System.out.print("Введите число: ");
-        int a = scn.nextInt();
+        int searchInt = scn.nextInt();
         boolean b = false;
         int[] arr1 = new int[]{4, 2, 3, 74, -32, 903, 12};
         System.out.println(Arrays.toString(arr1));
         for (int i = 0; i < arr1.length; i++) {
-            if (arr1[i] == a)
+            if (arr1[i] == searchInt){
                 b = true;
+                break;
+                }
         }
-        System.out.println(b ? a + " - есть в массиве" : a + " - нет в массиве");
+        System.out.println(b ? searchInt + " - есть в массиве" : searchInt + " - нет в массиве");
 
 //   2.Создайте массив целых чисел. Удалите все вхождения заданного числа из массива. Пусть
 //   число задается с консоли (класс Scanner). Если такого числа нет – выведите сообщение
@@ -32,15 +34,13 @@ public class HW_04_Array {
         System.out.print("Введите число, которое необходимо удалить из массива: ");
 
         int deleteNumber = scn.nextInt();
-        int sizeNewArray;
         int countSizeNewArray = 0;
         for (int i = 0; i < arr2.length; i++) {
             if (arr2[i] == deleteNumber) {
                 countSizeNewArray++;
             }
         }
-        sizeNewArray = arr2.length - countSizeNewArray;
-        int[] newArray = new int[sizeNewArray];
+        int[] newArray = new int[arr2.length - countSizeNewArray];
         int indexNewArray = 0;
         for (int i = 0; i < arr2.length; i++) {
             if (arr2[i] != deleteNumber) {
@@ -116,91 +116,89 @@ public class HW_04_Array {
         System.out.println("\nУрок №4, дополнительная часть, задание №1");
         System.out.print("Введите размер массива: ");
         int size = scn.nextInt();
-
-        if (size > 5 && size <= 10) {
-        } else {
-            System.out.print("Введен не верный размер массива, повторите ввод:");
-            scn.next();
-
-        }
-        int[] arr5 = new int[size];
-        int even = 0;
-        for (int i = 0; i < size; i++) {
-            arr5[i] = ((int) (Math.random() * 20) + 11);
-            if (arr5[i] % 2 == 0) {
-                even++;
+        while (size < 5 || size >10) {
+            System.out.print("Введен неверный размер массива, повторите ввод:");
+            size = scn.nextInt();
             }
-        }
-        System.out.println(Arrays.toString(arr1) + " - cозданный массив");
-        if (even == 0) {
-            System.out.println("В массиве нет четных чисел");
-        } else {
-            int[] arr6 = new int[even];
-            int indexArr2 = 0;
+            System.out.println("размер массива - " + size );
+
+            int[] arr5 = new int[size];
+            int even = 0;
             for (int i = 0; i < size; i++) {
+                arr5[i] = ((int) (Math.random() * 20) + 11);
                 if (arr5[i] % 2 == 0) {
-                    arr6[indexArr2] = arr5[i];
-                    indexArr2++;
+                    even++;
                 }
             }
-            System.out.println(Arrays.toString(arr6) + " - отредактированный массив (только с четными элементами)");
-        }
+            System.out.println(Arrays.toString(arr5) + " - cозданный массив");
+            if (even == 0) {
+                System.out.println("В массиве нет четных чисел");
+            } else {
+                int[] arr6 = new int[even];
+                int indexArr2 = 0;
+                for (int i = 0; i < size; i++) {
+                    if (arr5[i] % 2 == 0) {
+                        arr6[indexArr2] = arr5[i];
+                        indexArr2++;
+                    }
+                }
+                System.out.println(Arrays.toString(arr6) + " - отредактированный массив (только с четными элементами)");
+            }
 
 //      2. Создайте массив и заполните его. Выведите массив на экран в строку. Заменитe каждый элемент с
 //      нечетным индексом на 0. Снова выведите массив на экран на отдельной строке.
-        System.out.println("\nУрок №4, дополнительная часть, задание №2");
-        int[] arr7 = {6, 7, 83, 25, 16, 3, 28};
-        System.out.println(Arrays.toString(arr7) + " - первоначальный массив");
-        for (int i = 0; i < arr7.length; i++) {
-            if (i % 2 != 0) {
-                arr7[i] = 0;
+            System.out.println("\nУрок №4, дополнительная часть, задание №2");
+            int[] arr7 = {6, 7, 83, 25, 16, 3, 28};
+            System.out.println(Arrays.toString(arr7) + " - первоначальный массив");
+            for (int i = 0; i < arr7.length; i++) {
+                if (i % 2 != 0) {
+                    arr7[i] = 0;
+                }
             }
-        }
-        System.out.println(Arrays.toString(arr7) + " - отформатированный массив (нечетные индексы равны 0)");
+            System.out.println(Arrays.toString(arr7) + " - отформатированный массив (нечетные индексы равны 0)");
 
 //      3. Создайте массив строк. Заполните его произвольными именами людей. Отсортируйте массив.
 //      Результат выведите на консоль.
-        System.out.println("\nУрок №4, дополнительная часть, задание №3");
-        String[] ArrayString = {"Helen", "Jack", "Ivan", "David", "Agneshka", "Bob"};
-        Arrays.sort(ArrayString);
-        System.out.println(Arrays.toString(ArrayString));
+            System.out.println("\nУрок №4, дополнительная часть, задание №3");
+            String[] ArrayString = {"Helen", "Jack", "Ivan", "David", "Agneshka", "Bob"};
+            Arrays.sort(ArrayString);
+            System.out.println(Arrays.toString(ArrayString));
 
 //      4. Реализуйте алгоритм сортировки пузырьком, проставляя комментарии на каждом шаге.
-        System.out.println("\nУрок №4, дополнительная часть, задание №4");
-        int[] arr8 = new int[] {5, 9, 6, 2, 3, 1, 4, 8, 7};
-        // - инициализировали массив который необходимо отсортировать
-        System.out.println(Arrays.toString(arr8) + " - исходный массив");
-        // выводим созданный массив в консоль
-        boolean isSorted = false;
-        // вводим дополнительную переменную которая будет продолжать цикл сортировки пока не будет отсортирован весь массив.
-        int temp;
-        // еще одна дополнительная (резервная) переменая, введена для того, что бы мы могли поменять
-        // местами сравниваемые элементы
-        while(!isSorted){
-            //создаем цикл, который будет работать до тех пор пока не отсортируем весь массив.
-            isSorted = true;
-            // присваиваем значение переменной. в конце цикла, если будет какое либо изменение,
-            // мы ее меняем обратно на false и продолжаем сортировку.
-            for (int i = 0; i < arr8.length - 1; i++) {
-                //создаем еще один цикл, который будет проверять каждый элемент массива с правым от себя элементом.
-                if(arr8[i] > arr8[i + 1]){
-                    //здесь прописали условие что бы элемент сравнивался с правым от себя элементом по возрастанию.
-                temp = arr8[i];
-                // если условие вложенного цикла выполняется, сразу присваиваем нашей "резервной" переменной значение i-того элемента массива.
-                arr8[i] = arr8 [i + 1];
-                //в значение i-того элемента перемещаем в право (на следующую по порядку ячейку).
-                arr8[i + 1] = temp;
-                // значение правой ячейки смещаем левее по массиву,таким образом меняем элементы массива местами.
-                isSorted = false;
-                //т.к. условие сортировки вполнилось, т.е. было изменение, опять присваиваем значение false
-                // и продолжаем цикл пока весь массив не будет отсортирован.
-                // переменная  isSorted = true говорит о том что цикл while выполнен, соответственно массив отсортирован.
+            System.out.println("\nУрок №4, дополнительная часть, задание №4");
+            int[] arr8 = new int[]{5, 9, 6, 2, 3, 1, 4, 8, 7};
+            // - инициализировали массив который необходимо отсортировать
+            System.out.println(Arrays.toString(arr8) + " - исходный массив");
+            // выводим созданный массив в консоль
+            boolean isSorted = false;
+            // вводим дополнительную переменную которая будет продолжать цикл сортировки пока не будет отсортирован весь массив.
+            int temp;
+            // еще одна дополнительная (резервная) переменая, введена для того, что бы мы могли поменять
+            // местами сравниваемые элементы
+            while (!isSorted) {
+                //создаем цикл, который будет работать до тех пор пока не отсортируем весь массив.
+                isSorted = true;
+                // присваиваем значение переменной. в конце цикла, если будет какое либо изменение,
+                // мы ее меняем обратно на false и продолжаем сортировку.
+                for (int i = 0; i < arr8.length - 1; i++) {
+                    //создаем еще один цикл, который будет проверять каждый элемент массива с правым от себя элементом.
+                    if (arr8[i] > arr8[i + 1]) {
+                        //здесь прописали условие что бы элемент сравнивался с правым от себя элементом по возрастанию.
+                        temp = arr8[i];
+                        // если условие вложенного цикла выполняется, сразу присваиваем нашей "резервной" переменной значение i-того элемента массива.
+                        arr8[i] = arr8[i + 1];
+                        //в значение i-того элемента перемещаем в право (на следующую по порядку ячейку).
+                        arr8[i + 1] = temp;
+                        // значение правой ячейки смещаем левее по массиву,таким образом меняем элементы массива местами.
+                        isSorted = false;
+                        //т.к. условие сортировки вполнилось, т.е. было изменение, опять присваиваем значение false
+                        // и продолжаем цикл пока весь массив не будет отсортирован.
+                        // переменная  isSorted = true говорит о том что цикл while выполнен, соответственно массив отсортирован.
+                    }
                 }
+                System.out.println(Arrays.toString(arr8));
+                // выводим в консоль отсортированный массив
             }
-            System.out.println(Arrays.toString(arr8));
-            // выводим в консоль отсортированный массив
+
         }
-
     }
-}
-
