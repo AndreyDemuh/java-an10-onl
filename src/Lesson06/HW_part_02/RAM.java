@@ -9,8 +9,8 @@ public class RAM {
         this.memoryRAM = memoryRAM;
     }
     public RAM (){
-
     }
+
     public void infoRAM(){
         System.out.println("Название (модель) RAM: " + nameRAM + "\nОбъем RAM: " + memoryRAM + " GB");
     }

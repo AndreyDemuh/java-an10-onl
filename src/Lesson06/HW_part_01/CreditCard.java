@@ -13,14 +13,12 @@ public class CreditCard {
         this.accauntNum = accauntNum;
         this.currentSum = currentSum;
     }
-
     public void putMoney() {
         System.out.println("Введите сумму которую хотите положить на счет: ");
         int money = scn.nextInt();
         currentSum = currentSum + money;
         System.out.println("Вы положили " + money + " рублей, на Вашем счету " + currentSum + " рублей");
     }
-
     public void takeMoney() {
         System.out.println("Введите сумму которую хотите снять со счета");
         int money = scn.nextInt();

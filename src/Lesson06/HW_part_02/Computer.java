@@ -9,7 +9,6 @@ public class Computer {
         this.price = price;
         this.model = model;
     }
-
     public Computer(int price, String model, int RAM, int HDD) {
         this.price = price;
         this.model = model;

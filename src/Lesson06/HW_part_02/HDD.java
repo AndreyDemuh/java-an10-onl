@@ -11,7 +11,6 @@ public class HDD {
         this.type = type;
     }
     public HDD(){
-
     }
     public void infoHDD(){
         System.out.println("Название HDD: "+ nameHDD + "\nОбъем HDD: " + memoryHDD + " GB" + "\nТип HDD: " + type);

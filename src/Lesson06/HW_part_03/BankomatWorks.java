@@ -13,7 +13,6 @@ public class BankomatWorks {
 //        При снятии денег функция должна распечатывать каким количеством купюр какого номинала выдаётся
 //        сумма.
 //        Создать конструктор с тремя параметрами - количеством купюр каждого номинала.
-
     Bankomat bankomat1 = new Bankomat(5, 20 ,10);
     bankomat1.startCapital();
     bankomat1.putMoney();

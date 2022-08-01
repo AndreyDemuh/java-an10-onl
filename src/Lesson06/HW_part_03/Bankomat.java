@@ -101,7 +101,6 @@ public class Bankomat {
         System.out.println("Вам выдало " + giveMoney + " рублей, из них " + count100 + " х 100 рублевых купюр, " + count50 + " х 50 рублевых купюр, " + count20 + " х 20 рублевых купюр");
         System.out.println("В банкомате осталось " + newSum + ", из них " + remains100 + " х 100 рублевых купюр, " + remains50 + " х 50 рублевых купюр, " + remains20 + " х 20 рублевых купюр");
     }
-
     public boolean isGiveMany() {
         System.out.println("Введите снимаемую сумму: ");
         int takeMoney = scn.nextInt();
