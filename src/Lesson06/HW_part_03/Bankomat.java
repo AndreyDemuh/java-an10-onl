@@ -18,34 +18,34 @@ public class Bankomat {
 
     public void startCapital() {
 //        Scanner scn = new Scanner(System.in);
-//        System.out.println("Введите начальное количество денег наодящихся в банкомате:");
-//        System.out.println("Количество банкнот наминалом 20:");
+//        System.out.println("Р’РІРµРґРёС‚Рµ РЅР°С‡Р°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РґРµРЅРµРі РЅР°РѕРґСЏС‰РёС…СЃСЏ РІ Р±Р°РЅРєРѕРјР°С‚Рµ:");
+//        System.out.println("РљРѕР»РёС‡РµСЃС‚РІРѕ Р±Р°РЅРєРЅРѕС‚ РЅР°РјРёРЅР°Р»РѕРј 20:");
 //        money20 = scn.nextInt();
-//        System.out.println("Количество банкнот наминалом 50:");
+//        System.out.println("РљРѕР»РёС‡РµСЃС‚РІРѕ Р±Р°РЅРєРЅРѕС‚ РЅР°РјРёРЅР°Р»РѕРј 50:");
 //        money50 = scn.nextInt();
-//        System.out.println("Количество банкнот наминалом 100:");
+//        System.out.println("РљРѕР»РёС‡РµСЃС‚РІРѕ Р±Р°РЅРєРЅРѕС‚ РЅР°РјРёРЅР°Р»РѕРј 100:");
 //        money100 = scn.nextInt();
         startSum = 20 * money20 + 50 * money50 + 100 * money100;
-        System.out.println("В банкомате " + startSum + " рублей. \n" + money20 + " шт. 20 рублевых купюр\n" + money50 + " шт. 50 рублевых купюр\n" + money100 + " шт. 100 рублевых купюр");
+        System.out.println("Р’ Р±Р°РЅРєРѕРјР°С‚Рµ " + startSum + " СЂСѓР±Р»РµР№. \n" + money20 + " С€С‚. 20 СЂСѓР±Р»РµРІС‹С… РєСѓРїСЋСЂ\n" + money50 + " С€С‚. 50 СЂСѓР±Р»РµРІС‹С… РєСѓРїСЋСЂ\n" + money100 + " С€С‚. 100 СЂСѓР±Р»РµРІС‹С… РєСѓРїСЋСЂ");
     }
 
     public void putMoney() {
-        System.out.println("Сколько денег хотите добавить в банкомат?");
+        System.out.println("РЎРєРѕР»СЊРєРѕ РґРµРЅРµРі С…РѕС‚РёС‚Рµ РґРѕР±Р°РІРёС‚СЊ РІ Р±Р°РЅРєРѕРјР°С‚?");
         int putMoney = scn.nextInt();
         while (putMoney <= 10 || putMoney == 30 || putMoney % 10 != 0) {
 //            if ((putMoney <= 10 || putMoney == 30) && putMoney % 10 !=0) {
-            System.out.println("Введена некорректная сумма. Принимаются банкноты наминалом в 20, 50 либо 100. Повторите запрос");
+            System.out.println("Р’РІРµРґРµРЅР° РЅРµРєРѕСЂСЂРµРєС‚РЅР°СЏ СЃСѓРјРјР°. РџСЂРёРЅРёРјР°СЋС‚СЃСЏ Р±Р°РЅРєРЅРѕС‚С‹ РЅР°РјРёРЅР°Р»РѕРј РІ 20, 50 Р»РёР±Рѕ 100. РџРѕРІС‚РѕСЂРёС‚Рµ Р·Р°РїСЂРѕСЃ");
             putMoney = scn.nextInt();
         }
         if ((putMoney == 20 || putMoney == 50 || putMoney == 100) && putMoney % 20 == 0 || putMoney % 50 == 0) {
-            System.out.println("Вы пополнили сумму на " + putMoney + " рублей");
+            System.out.println("Р’С‹ РїРѕРїРѕР»РЅРёР»Рё СЃСѓРјРјСѓ РЅР° " + putMoney + " СЂСѓР±Р»РµР№");
         }
         newSum = startSum + putMoney;
-        System.out.println("В банкомате " + newSum + " рублей");
+        System.out.println("Р’ Р±Р°РЅРєРѕРјР°С‚Рµ " + newSum + " СЂСѓР±Р»РµР№");
     }
 
     public void takeMoney() {
-        System.out.println("Введите сумму которую хотите снять ");
+        System.out.println("Р’РІРµРґРёС‚Рµ СЃСѓРјРјСѓ РєРѕС‚РѕСЂСѓСЋ С…РѕС‚РёС‚Рµ СЃРЅСЏС‚СЊ ");
 
         int count100 = 0;
         int count50 = 0;
@@ -59,16 +59,16 @@ public class Bankomat {
         giveMoney = takeMoney;
         while (takeMoney <= 10 || takeMoney == 30 || takeMoney % 10 != 0 || takeMoney > newSum) {
             if (takeMoney <= 10 || takeMoney == 30 || takeMoney % 10 != 0) {
-                System.out.println("Невозможно снять заданную сумму, имеются банкноты наминалом только 20, 50, 100 рублей");
+                System.out.println("РќРµРІРѕР·РјРѕР¶РЅРѕ СЃРЅСЏС‚СЊ Р·Р°РґР°РЅРЅСѓСЋ СЃСѓРјРјСѓ, РёРјРµСЋС‚СЃСЏ Р±Р°РЅРєРЅРѕС‚С‹ РЅР°РјРёРЅР°Р»РѕРј С‚РѕР»СЊРєРѕ 20, 50, 100 СЂСѓР±Р»РµР№");
                 takeMoney = scn.nextInt();
             }
             if (takeMoney > newSum) {
-                System.out.println("Недостаточно средств, введите другую сумму.");
+                System.out.println("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃСЂРµРґСЃС‚РІ, РІРІРµРґРёС‚Рµ РґСЂСѓРіСѓСЋ СЃСѓРјРјСѓ.");
                 takeMoney = scn.nextInt();
             }
         }
         if ((takeMoney == 20 || takeMoney == 50 || takeMoney == 100) || takeMoney % 20 == 0 || takeMoney % 50 == 0) {
-            System.out.println("Вы сняли  " + takeMoney + " рублей");
+            System.out.println("Р’С‹ СЃРЅСЏР»Рё  " + takeMoney + " СЂСѓР±Р»РµР№");
         }
         for (; takeMoney > 0; ) {
             if (takeMoney != 0) {
@@ -98,12 +98,12 @@ public class Bankomat {
             }
         }
         newSum = newSum - giveMoney;
-        System.out.println("Вам выдало " + giveMoney + " рублей, из них " + count100 + " х 100 рублевых купюр, " + count50 + " х 50 рублевых купюр, " + count20 + " х 20 рублевых купюр");
-        System.out.println("В банкомате осталось " + newSum + ", из них " + remains100 + " х 100 рублевых купюр, " + remains50 + " х 50 рублевых купюр, " + remains20 + " х 20 рублевых купюр");
+        System.out.println("Р’Р°Рј РІС‹РґР°Р»Рѕ " + giveMoney + " СЂСѓР±Р»РµР№, РёР· РЅРёС… " + count100 + " С… 100 СЂСѓР±Р»РµРІС‹С… РєСѓРїСЋСЂ, " + count50 + " С… 50 СЂСѓР±Р»РµРІС‹С… РєСѓРїСЋСЂ, " + count20 + " С… 20 СЂСѓР±Р»РµРІС‹С… РєСѓРїСЋСЂ");
+        System.out.println("Р’ Р±Р°РЅРєРѕРјР°С‚Рµ РѕСЃС‚Р°Р»РѕСЃСЊ " + newSum + ", РёР· РЅРёС… " + remains100 + " С… 100 СЂСѓР±Р»РµРІС‹С… РєСѓРїСЋСЂ, " + remains50 + " С… 50 СЂСѓР±Р»РµРІС‹С… РєСѓРїСЋСЂ, " + remains20 + " С… 20 СЂСѓР±Р»РµРІС‹С… РєСѓРїСЋСЂ");
     }
 
     public boolean isGiveMany() {
-        System.out.println("Введите снимаемую сумму: ");
+        System.out.println("Р’РІРµРґРёС‚Рµ СЃРЅРёРјР°РµРјСѓСЋ СЃСѓРјРјСѓ: ");
         int takeMoney = scn.nextInt();
         boolean isTakeMoney = false;
         if (takeMoney <= 10 || takeMoney == 30 || takeMoney % 10 != 0 || takeMoney > newSum) {

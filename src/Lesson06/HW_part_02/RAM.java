@@ -12,7 +12,7 @@ public class RAM {
 
     }
     public void infoRAM(){
-        System.out.println("Название (модель) RAM: " + nameRAM + "\nОбъем RAM: " + memoryRAM + " GB");
+        System.out.println("РќР°Р·РІР°РЅРёРµ (РјРѕРґРµР»СЊ) RAM: " + nameRAM + "\nРћР±СЉРµРј RAM: " + memoryRAM + " GB");
     }
 }
 

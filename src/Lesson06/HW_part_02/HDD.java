@@ -3,7 +3,7 @@ package Lesson06.HW_part_02;
 public class HDD {
     String nameHDD;
     int memoryHDD;
-    String type;  // external -внешний, internal - внеутренний.
+    String type;  // external -РІРЅРµС€РЅРёР№, internal - РІРЅРµСѓС‚СЂРµРЅРЅРёР№.
 
     public HDD(String name, int memoryHDD, String type) {
         this.nameHDD = name;
@@ -14,6 +14,6 @@ public class HDD {
 
     }
     public void infoHDD(){
-        System.out.println("Название HDD: "+ nameHDD + "\nОбъем HDD: " + memoryHDD + " GB" + "\nТип HDD: " + type);
+        System.out.println("РќР°Р·РІР°РЅРёРµ HDD: "+ nameHDD + "\nРћР±СЉРµРј HDD: " + memoryHDD + " GB" + "\nРўРёРї HDD: " + type);
     }
 }

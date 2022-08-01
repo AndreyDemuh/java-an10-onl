@@ -15,44 +15,44 @@ public class CreditCard {
     }
 
     public void putMoney() {
-        System.out.println("Введите сумму которую хотите положить на счет: ");
+        System.out.println("Р’РІРµРґРёС‚Рµ СЃСѓРјРјСѓ РєРѕС‚РѕСЂСѓСЋ С…РѕС‚РёС‚Рµ РїРѕР»РѕР¶РёС‚СЊ РЅР° СЃС‡РµС‚: ");
         int money = scn.nextInt();
         currentSum = currentSum + money;
-        System.out.println("Вы положили " + money + " рублей, на Вашем счету " + currentSum + " рублей");
+        System.out.println("Р’С‹ РїРѕР»РѕР¶РёР»Рё " + money + " СЂСѓР±Р»РµР№, РЅР° Р’Р°С€РµРј СЃС‡РµС‚Сѓ " + currentSum + " СЂСѓР±Р»РµР№");
     }
 
     public void takeMoney() {
-        System.out.println("Введите сумму которую хотите снять со счета");
+        System.out.println("Р’РІРµРґРёС‚Рµ СЃСѓРјРјСѓ РєРѕС‚РѕСЂСѓСЋ С…РѕС‚РёС‚Рµ СЃРЅСЏС‚СЊ СЃРѕ СЃС‡РµС‚Р°");
         int money = scn.nextInt();
 
         while (money > currentSum) {
             if (money > currentSum) {
-                System.out.println("Введена некорректная сумма. Недостаточно средств. Повторите ввод. ");
+                System.out.println("Р’РІРµРґРµРЅР° РЅРµРєРѕСЂСЂРµРєС‚РЅР°СЏ СЃСѓРјРјР°. РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃСЂРµРґСЃС‚РІ. РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ. ");
                 money = scn.nextInt();
             }
         }
             if (money < currentSum) {
                 currentSum = currentSum - money;
-                System.out.println("Вы сняли " + money + " рублей, на Вашем счету " + currentSum + " рублей");
+                System.out.println("Р’С‹ СЃРЅСЏР»Рё " + money + " СЂСѓР±Р»РµР№, РЅР° Р’Р°С€РµРј СЃС‡РµС‚Сѓ " + currentSum + " СЂСѓР±Р»РµР№");
             }
         }
         public void infoCard(){
-            System.out.println("Введите 1, если хотите получить инфомрацию о карте, и введите 2, если хотите забрать вашу карту. ");
+            System.out.println("Р’РІРµРґРёС‚Рµ 1, РµСЃР»Рё С…РѕС‚РёС‚Рµ РїРѕР»СѓС‡РёС‚СЊ РёРЅС„РѕРјСЂР°С†РёСЋ Рѕ РєР°СЂС‚Рµ, Рё РІРІРµРґРёС‚Рµ 2, РµСЃР»Рё С…РѕС‚РёС‚Рµ Р·Р°Р±СЂР°С‚СЊ РІР°С€Сѓ РєР°СЂС‚Сѓ. ");
             int choose;
             choose = scn.nextInt();
 
             while (choose >= 2) {
                 if (choose > 2) {
-                    System.out.println("Вы ввели некорректное число, повторите ввод: ");
+                    System.out.println("Р’С‹ РІРІРµР»Рё РЅРµРєРѕСЂСЂРµРєС‚РЅРѕРµ С‡РёСЃР»Рѕ, РїРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ: ");
                     choose = scn.nextInt();
                 }
                 if (choose == 2) {
-                    System.out.println("Заберите карту");
+                    System.out.println("Р—Р°Р±РµСЂРёС‚Рµ РєР°СЂС‚Сѓ");
                     break;
                 }
             }
                 if (choose == 1) {
-                    System.out.println("Информация о карте: номер лицевого счета " +  accauntNum + ", на счету " + currentSum + " рублей");
+                    System.out.println("РРЅС„РѕСЂРјР°С†РёСЏ Рѕ РєР°СЂС‚Рµ: РЅРѕРјРµСЂ Р»РёС†РµРІРѕРіРѕ СЃС‡РµС‚Р° " +  accauntNum + ", РЅР° СЃС‡РµС‚Сѓ " + currentSum + " СЂСѓР±Р»РµР№");
                 }
     }
 }
