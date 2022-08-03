@@ -13,15 +13,16 @@ public class BankomatWorks {
 //        При снятии денег функция должна распечатывать каким количеством купюр какого номинала выдаётся
 //        сумма.
 //        Создать конструктор с тремя параметрами - количеством купюр каждого номинала.
-    Bankomat bankomat1 = new Bankomat(5, 20 ,10);
-    bankomat1.startCapital();
-    bankomat1.putMoney();
-    bankomat1.takeMoney();
-    bankomat1.isGiveMany();
+    Bankomat bankomat1 = new Bankomat(50, 20 ,10);
 
-    Bankomat bankomat2 = new Bankomat(10, 15, 1);
-    bankomat2.startCapital();
-    bankomat2.putMoney();
-    bankomat2.takeMoney();
+    bankomat1.putMoney(500);
+    bankomat1.takeMoney(700);
+
+    System.out.println("------------------------------------------");
+
+    Bankomat bankomat2 = new Bankomat(5, 10, 3);
+
+    bankomat2.putMoney(600);
+    bankomat2.takeMoney(200);
     }
 }

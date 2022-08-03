@@ -5,6 +5,7 @@ public class Computer {
     String model;
     int RAM;
     int HDD;
+
     public Computer(int price, String model) {
         this.price = price;
         this.model = model;

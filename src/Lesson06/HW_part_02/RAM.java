@@ -9,8 +9,9 @@ public class RAM {
         this.memoryRAM = memoryRAM;
     }
     public RAM (){
+        this.nameRAM = "HyperX";
+        this.memoryRAM = 8;
     }
-
     public void infoRAM(){
         System.out.println("Название (модель) RAM: " + nameRAM + "\nОбъем RAM: " + memoryRAM + " GB");
     }

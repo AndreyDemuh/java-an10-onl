@@ -10,19 +10,17 @@ public class UseCreditCard {
 //        счета и начальная сумма
 //        Тестовый сценарий для проверки:
 //        Положите деньги на первые две карточки и снимите с третьей.
+
         CreditCard MasterCard = new CreditCard(1, 500.25);
         CreditCard BPSCard = new CreditCard(2, 1000);
         CreditCard TexnoBankCard = new CreditCard(3, 450.50);
 
-        MasterCard.putMoney();
-
-        BPSCard.putMoney();
-
-        TexnoBankCard.takeMoney();
+        MasterCard.putMoney(500.5);
+        BPSCard.putMoney(125.0);
+        TexnoBankCard.takeMoney(250.5);
 
         MasterCard.infoCard();
         BPSCard.infoCard();
         TexnoBankCard.infoCard();
-
     }
 }

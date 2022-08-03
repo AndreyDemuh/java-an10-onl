@@ -19,28 +19,22 @@ public class UseComputer {
 
         Computer computer1 = new Computer(2500, "ASUS");
         computer1.RAM = 8;
-        computer1.HDD = 250;
-        RAM RAM1 = new RAM();
-        RAM1.nameRAM = "HyperX";
-        RAM1.memoryRAM = 8;
-        HDD HDD1 = new HDD();
-        HDD1.nameHDD = "SEAGATE";
-        HDD1.memoryHDD = 400;
-        HDD1.type = "внешний";
-
-        Computer computer2 = new Computer(3200, "SAMSUNG", 8, 250);
-        RAM RAM2 = new RAM("Kingston", 8);
-        HDD HDD2 = new HDD("TOSHIBA", 250, "внутренний");
-        System.out.println("Информация о первом компьютере:");
+        computer1.HDD = 1000;
+        RAM ram1 = new RAM();
+        HDD hdd1 = new HDD();
         computer1.infoComputer();
-        RAM1.infoRAM();
-        HDD1.infoHDD();
+        ram1.infoRAM();
+        hdd1.infoHDD();
 
-        System.out.println();
+        System.out.println("----------------------------------------------------------------");
 
+        Computer computer2 = new Computer(3200, "SAMSUNG", 8, 256);
         System.out.println("Инфомрация о втором компьютере:");
+        RAM ram2 = new RAM("HyperX", 8);
+        HDD hdd2 = new HDD("TOSHIBA", 256, "внутренний");
         computer2.infoComputer();
-        RAM2.infoRAM();
-        HDD2.infoHDD();
+        ram2.infoRAM();
+        hdd2.infoHDD();
+
     }
 }
