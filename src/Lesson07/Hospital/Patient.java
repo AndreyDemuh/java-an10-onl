@@ -1,8 +1,7 @@
 package Lesson07.Hospital;
 
 public class Patient {
-    //    Переопределили метод план лечения ("PlanToHeal") который назначает врача пациенту согласно выбранному плану лечения.
-    private int planToHeal;
+       private int planToHeal;
 
     public int getPlanToHeal() {
         return planToHeal;

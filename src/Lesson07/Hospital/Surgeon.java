@@ -5,7 +5,6 @@ public class Surgeon extends Doctor{
     public Surgeon(String specialization) {
         super(specialization);
     }
-
     //   Переопределили для хирурга метод лечения
     @Override
     protected void methodHeal() {

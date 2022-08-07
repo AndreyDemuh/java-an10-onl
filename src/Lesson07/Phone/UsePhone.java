@@ -43,5 +43,6 @@ public class UsePhone {
         sony.receiveCall("Сергей", "+375(44)111-22-33");
 
         sony.sendMessage("+375(29)987-65-43", "+375(33)123-45-67", "+375(29)333-44-55");
+
     }
 }

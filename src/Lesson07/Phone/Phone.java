@@ -47,5 +47,6 @@ public class Phone {
         System.out.println("Сообщение отправлено на номера:");
         for (String o: number)
             System.out.println(o.toString()+" ");
+
     }
 }
