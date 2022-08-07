@@ -1,22 +1,23 @@
 package Lesson07.Hospital;
 
-public class Patient extends PlanToHeal {
+public class Patient {
+    //    Переопределили метод план лечения ("PlanToHeal") который назначает врача пациенту согласно выбранному плану лечения.
+    private int planToHeal;
 
-//    Переопределили метод план лечения ("PlanToHeal") который назначает врача пациенту согласно выбранному плану лечения.
-    @Override
-    protected void planToHeal(int choosePlanToHeal) {
-        if (choosePlanToHeal == 1) {
-            System.out.println("План лечения: необходима операция");
-            Surgeon surgeon = new Surgeon();
-            surgeon.methodHeal();
-        } else if (choosePlanToHeal == 2) {
-            System.out.println("План лечения: необходимо вырвать зуб");
-            Dentist dentist = new Dentist();
-            dentist.methodHeal();
+    public int getPlanToHeal() {
+        return planToHeal;
+    }
+
+    public void setPlanToHeal(int planToHeal) {
+        this.planToHeal = planToHeal;
+    }
+    protected void planToHeal(int setPlanToHeal) {
+        if (setPlanToHeal == 1) {
+            System.out.println("Нужен осмотр хирурга");
+        } else if (setPlanToHeal == 2) {
+            System.out.println("Нужен осмотр дантиста");
         } else {
-            System.out.println("План лечения: необходим осмотр терапевта");
-            Therapist therapist = new Therapist();
-            therapist.methodHeal();
+            System.out.println("Нужен осмотр терапевта");
         }
     }
 }
