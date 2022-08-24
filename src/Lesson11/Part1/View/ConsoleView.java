@@ -1,5 +1,6 @@
 package Lesson11.Part1.View;
 
+
 import Lesson11.Part1.Check.CompareCheck;
 
 public class ConsoleView implements View {

@@ -70,6 +70,7 @@ public class LinkedListCreate implements CreatorCollection<Integer> {
         return null;
     }
 
+
     private void fillList() {
         for (int i = 0; i < elementsCount; i++) {
             list.add(i, 1);

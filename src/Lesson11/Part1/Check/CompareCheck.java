@@ -3,6 +3,7 @@ package Lesson11.Part1.Check;
 import Lesson11.Part1.CompareMethod.Comparating;
 import Lesson11.Part1.Writer.CustomFile;
 
+
 // класс для сравнения и записи проведенных "испытаний"
 public class CompareCheck {
     private Comparating comparator;

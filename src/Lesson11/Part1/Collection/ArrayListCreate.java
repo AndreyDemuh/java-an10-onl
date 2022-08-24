@@ -13,7 +13,6 @@ import java.util.Objects;
             this.list = new ArrayList<>(elementsCount);
             fillList();
         }
-
         @Override
         public void addToBeginning(Integer element) {
             list.add(0, element);

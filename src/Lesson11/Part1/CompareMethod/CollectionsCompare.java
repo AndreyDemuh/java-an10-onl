@@ -2,7 +2,6 @@ package Lesson11.Part1.CompareMethod;
 
 import Lesson11.Part1.Collection.ExecutCompare;
 import Lesson11.Part1.Collection.CreatorCollection;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 

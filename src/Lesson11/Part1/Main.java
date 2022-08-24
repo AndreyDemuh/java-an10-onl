@@ -21,9 +21,7 @@ public class Main {
         ConsoleView consoleView = new ConsoleView(compareController);
 
         compareController.startComparing();
-
         consoleView.displayAllResults();
-
         consoleView.displayResults();
     }
 }
