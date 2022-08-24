@@ -8,7 +8,6 @@ import java.util.Objects;
         private ArrayList<Integer> list;
         private final int elementsCount;
 
-
         public ArrayListCreate(int elementsCount) {
             this.elementsCount = elementsCount;
             this.list = new ArrayList<>(elementsCount);

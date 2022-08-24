@@ -1,6 +1,5 @@
 package Lesson11.Part1.Collection;
 
-
 public interface CreatorCollection<T> {
 
 //  Интерфейс с необходимыми методами для проведения "сравнения"

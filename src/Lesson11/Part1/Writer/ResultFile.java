@@ -6,7 +6,6 @@ public class ResultFile implements CustomFile, Content {
     private final String path;
     private StringBuilder content = new StringBuilder();
 
-
     public ResultFile(String filePath) {
         path = filePath;
         read();

@@ -5,7 +5,6 @@ import Lesson11.Part1.Check.CompareCheck;
 public class ConsoleView implements View {
     private CompareCheck controller;
 
-
     public ConsoleView(CompareCheck controller) {
         this.controller = controller;
     }

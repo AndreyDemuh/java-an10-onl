@@ -8,12 +8,10 @@ public class CompareCheck {
     private Comparating comparator;
     private CustomFile file;
 
-
     public CompareCheck(Comparating comparator, CustomFile file) {
         this.comparator = comparator;
         this.file = file;
     }
-
 
     public String getLastResults() {
         return comparator.getLastResults();

@@ -6,7 +6,6 @@ import Lesson11.Part1.CompareMethod.CollectionsCompare;
 import Lesson11.Part1.Check.CompareCheck;
 import Lesson11.Part1.View.ConsoleView;
 import Lesson11.Part1.Writer.ResultFile;
-
 public class Main {
     public static void main(String[] args) {
         final String PATH_TO_HISTORY_FILE = "src/Lesson11/Part1/result.txt";
@@ -22,7 +21,9 @@ public class Main {
         ConsoleView consoleView = new ConsoleView(compareController);
 
         compareController.startComparing();
+
         consoleView.displayAllResults();
+
         consoleView.displayResults();
     }
 }

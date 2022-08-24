@@ -4,7 +4,6 @@ public interface Comparating {
 
 //   Метод возвращает последний реультат сравнения
     String getLastResults();
-
 //   Начало сравнения
     void compare();
 }

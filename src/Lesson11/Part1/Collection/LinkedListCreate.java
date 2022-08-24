@@ -8,7 +8,6 @@ public class LinkedListCreate implements CreatorCollection<Integer> {
     private LinkedList<Integer> list;
     private final int elementsCount;
 
-
     public LinkedListCreate(int elementsCount) {
         this.elementsCount = elementsCount;
         this.list = new LinkedList<>();

@@ -1,6 +1,5 @@
 package Lesson11.Part1.CompareMethod;
 
-
 import Lesson11.Part1.Collection.ExecutCompare;
 import Lesson11.Part1.Collection.CreatorCollection;
 
@@ -14,7 +13,6 @@ public class CollectionsCompare implements Comparating {
     private StringBuilder results = new StringBuilder();
     private SimpleDateFormat dateFormatter = new SimpleDateFormat(DATE_FORMAT);
 
-
     public CollectionsCompare(CreatorCollection<Integer> collection1, CreatorCollection<Integer> collection2) {
         this.collection1 = collection1;
         this.collection2 = collection2;
@@ -24,7 +22,6 @@ public class CollectionsCompare implements Comparating {
     public String getLastResults() {
         return results.toString();
     }
-
 //    Методы сравнения
     public void compare() {
         String dateTime = dateFormatter.format(new Date());
