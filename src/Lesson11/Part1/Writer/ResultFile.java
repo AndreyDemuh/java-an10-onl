@@ -1,6 +1,5 @@
 package Lesson11.Part1.Writer;
 
-
 import java.io.*;
 
 public class ResultFile implements CustomFile, Content {

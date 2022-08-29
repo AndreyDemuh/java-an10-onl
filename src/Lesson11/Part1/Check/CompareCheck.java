@@ -8,7 +8,6 @@ import Lesson11.Part1.Writer.CustomFile;
 public class CompareCheck {
     private Comparating comparator;
     private CustomFile file;
-
     public CompareCheck(Comparating comparator, CustomFile file) {
         this.comparator = comparator;
         this.file = file;
