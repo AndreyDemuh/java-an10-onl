@@ -9,19 +9,34 @@ public class MainClass_part1 {
 //        Версия #1
 
         // Последовательный вывод потоков
-        for (int i = 0; i < 20; i++) {
+        Person person = new Person();
 
-            PersonSay T3 = new PersonSay("Привет, ");
-            PersonSay T2 = new PersonSay("как дела? ");
-            PersonSay T1 = new PersonSay("что делаешь?");
+        Thread T3 = new Thread (() -> {
+            for (int i = 0; i < 20; i++) {
+                person.printMessage1();
+            }
+        });
 
-            T3.start();
-            T3.join();
-            T2.start();
-            T2.join();
-            T1.start();
-            T2.join();
+        Thread T2 = new Thread (() -> {
+            for (int i = 0; i < 20; i++) {
+                person.printMessage2();
+            }
+        });
+
+        Thread T1 = new Thread (() -> {
+            for (int i = 0; i < 20; i++) {
+                person.printMessage3();
+            }
+        });
+
+        T3.start();
+        T2.start();
+        T1.start();
+
+        T3.join();
+        T2.join();
+        T1.join();
 
         }
     }
-}
+
