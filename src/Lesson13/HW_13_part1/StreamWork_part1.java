@@ -70,7 +70,6 @@ public class StreamWork_part1 {
         //Вывести среднее арифметическое всех чисел в стриме
         System.out.println("Среднее арифметическое всех чисел в стриме:" +  myArrayList.stream().
                 mapToInt(Integer::intValue).average());
-
     }
 
 }
