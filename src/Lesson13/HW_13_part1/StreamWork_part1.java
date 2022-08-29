@@ -45,7 +45,7 @@ public class StreamWork_part1 {
         //вывдим все четные элементы в диапазоне от 7 до 17 (включительно)
         System.out.println("Коллекция с четными числами в диапазоне от 7 до 17 (включительно):");
         myArrayList.stream()
-                .filter(integer -> integer >= 7 && integer <=17 && integer %2 ==0)
+                .filter(integer -> integer >= 7 && integer <= 17 && integer % 2 ==0)
                 .forEach(StreamWork_part1::printCreateArrayList);
         System.out.println();
 
