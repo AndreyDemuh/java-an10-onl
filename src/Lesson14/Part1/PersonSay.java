@@ -1,9 +1,9 @@
-package Lesson14.Part1.version_01;
+package Lesson14.Part1;
 
-public class Person extends Thread{
+public class PersonSay extends Thread{
 
     //сделал класс объект которого будет реализовывать потоки
-    public Person(String say){
+    public PersonSay(String say){
         super(say);
     }
     @Override

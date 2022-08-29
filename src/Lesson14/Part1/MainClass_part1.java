@@ -1,6 +1,6 @@
-package Lesson14.Part1.version_01;
+package Lesson14.Part1;
 
-public class MainClass_ver1 {
+public class MainClass_part1 {
     public static void main(String[] args) throws InterruptedException {
 
 //        Создать три потока Т1, Т2 и Т3
@@ -11,9 +11,9 @@ public class MainClass_ver1 {
         // Последовательный вывод потоков
         for (int i = 0; i < 20; i++) {
 
-            Person T3 = new Person("Привет, ");
-            Person T2 = new Person("как дела? ");
-            Person T1 = new Person("что делаешь?");
+            PersonSay T3 = new PersonSay("Привет, ");
+            PersonSay T2 = new PersonSay("как дела? ");
+            PersonSay T1 = new PersonSay("что делаешь?");
 
             T3.start();
             T3.join();
