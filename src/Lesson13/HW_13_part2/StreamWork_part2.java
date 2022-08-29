@@ -35,5 +35,6 @@ public class StreamWork_part2 {
                 .findFirst()
                 .orElse("Empty"));
         System.out.println(result3);
+
     }
 }
