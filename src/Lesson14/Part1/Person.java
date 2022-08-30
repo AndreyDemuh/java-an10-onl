@@ -42,7 +42,6 @@ public class Person {
         System.out.print(MESSAGE3);
         currentMessage = MESSAGE1;
         notifyAll();
-
     }
 }
 
