@@ -18,6 +18,7 @@ public class LinkedListCreate implements CreatorCollection<Integer> {
     public void addToBeginning(Integer element) {
         list.add(0, element);
     }
+
     @Override
     public void addToMiddle(Integer element, int index) {
         list.add(index, element);

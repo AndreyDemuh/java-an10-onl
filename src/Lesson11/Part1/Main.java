@@ -18,7 +18,6 @@ public class Main {
                 ),
                 new ResultFile(PATH_TO_HISTORY_FILE)
         );
-
         ConsoleView consoleView = new ConsoleView(compareController);
 
         compareController.startComparing();

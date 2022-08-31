@@ -32,6 +32,7 @@ import java.util.Objects;
         public void removeFromBeginning() {
             list.remove(0);
         }
+
         @Override
         public void removeFromMiddle(int index) {
             list.remove(index);

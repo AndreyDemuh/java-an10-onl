@@ -11,6 +11,7 @@ public class CollectionsCompare implements Comparating {
     private CreatorCollection<Integer> collection2;
     private StringBuilder results = new StringBuilder();
     private SimpleDateFormat dateFormatter = new SimpleDateFormat(DATE_FORMAT);
+
     public CollectionsCompare(CreatorCollection<Integer> collection1, CreatorCollection<Integer> collection2) {
         this.collection1 = collection1;
         this.collection2 = collection2;
